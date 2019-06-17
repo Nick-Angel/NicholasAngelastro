@@ -1,0 +1,44 @@
+.fullBg {
+    height: 100vh;
+    min-width: 100vw;
+    width: 100vw;
+    -webkit-animation: fadein 3s ; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { filter: blur(16px)}
+    to   { filter: blur(0px) }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { filter: blur(16px)}
+    to   { filter: blur(0px) }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { filter: blur(16px)}
+    to   { filter: blur(0px) }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { filter: blur(16px)}
+    to   { filter: blur(0px) }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { filter: blur(16px)}
+    to   { filter: blur(0px) }
+}
+
+
+
+
+  
