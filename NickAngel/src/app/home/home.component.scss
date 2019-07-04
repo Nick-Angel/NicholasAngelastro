@@ -4,16 +4,81 @@
   * fix font compatibility issues with different browsers
 **/
 
-
-@font-face {
-    font-family: "Roboto";
-    src: url("/Users/nangelastro/Library/Fonts/Roboto-Regular.ttf");
-
-}
-
 h1 {
-    font-family: "Roboto", "Roboto-Light";
+    font-family: "Roboto", "Roboto-Thin", "Roboto-Light", sans-serif;
 }
+
+.navbar {
+    z-index: 3;
+    overflow: hidden;
+    position: fixed;
+    right: 1.5%;
+    top: 2%;
+}
+
+.navbar a {
+    z-index: 3;
+}
+
+.contact {
+    -webkit-animation: .75s ease 5.25s normal both 1 appear;
+    -moz-animation: .75s ease 5.25s normal both 1 appear;
+     -ms-animation: .75s ease 5.25s normal both 1 appear;
+      -o-animation: .75s ease 5.25s normal both 1 appear;
+         animation: .75s ease 5.25s normal both 1 appear;
+}
+
+.work {
+    -webkit-animation: .75s ease 5s normal both 1 appear;
+    -moz-animation: .75s ease 5s normal both 1 appear;
+     -ms-animation: .75s ease 5s normal both 1 appear;
+      -o-animation: .75s ease 5s normal both 1 appear;
+         animation: .75s ease 5s normal both 1 appear;
+}
+
+.projects {
+    -webkit-animation: .75s ease 4.75s normal both 1 appear;
+    -moz-animation: .75s ease 4.75s normal  both 1 appear;
+     -ms-animation: .75s ease 4.75s normal both 1 appear;
+      -o-animation: .75s ease 4.75s normal both 1 appear;
+         animation: .75s ease 4.75s normal both 1 appear;
+}
+
+.aboutLink {
+    opacity: 0;
+    user-select: none;
+    -webkit-animation: .75s ease 4.5s normal forwards 1 appear;
+    -moz-animation: .75s ease 4.5s normal forwards 1 appear;
+     -ms-animation: .75s ease 4.5s normal forwards 1 appear;
+      -o-animation: .75s ease 4.5s normal forwards 1 appear;
+         animation: .75s ease 4.5s normal forwards 1 appear;
+}
+
+.aboutLink:hover {
+    user-select: none;
+    -webkit-animation: .5s ease 0s normal forwards 1 glow;
+    -moz-animation: .5s ease 0s normal forwards 1 glow;
+     -ms-animation: .5s ease 0s normal forwards 1 glow;
+      -o-animation: .5s ease 0s normal forwards 1 glow;
+         animation: .5s ease 0s normal forwards 1 glow;
+}
+
+
+.navbar {
+    visibility: hidden;
+    border: 1px solid blue;
+}
+
+.navbar a {
+    font-family: "Roboto";
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2vm;
+    color: rgba(177, 189, 201, 0.9);
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+  }
 
 .hello {
     height: 10%;
@@ -60,7 +125,8 @@ h1 {
     left: 10px;
     opacity: 0;
     border: 1px solid rgba(255, 255, 255, .4);
-    z-index: 10;
+    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
+    z-index: 3;
 
     -webkit-animation: flicker ease 1s 4.5s both;
        -moz-animation: flicker ease 1s 4.5s both;
@@ -95,7 +161,7 @@ h1 {
 .wrapper {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 47.5%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1;
@@ -103,7 +169,8 @@ h1 {
 
 .name {
     opacity: 1;
-    font-family: Roboto-Thin;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
     font-size: 2.25vw;
     letter-spacing: 2px;
     color: rgba(177, 189, 201, 0.9);
@@ -152,8 +219,16 @@ h1 {
 .about {
   background: black;
   position: relative;
-  z-index: 2;
-  height: 80%;
+  height: 100%;
+  z-index:2;
+
+  outline: 1px solid transparent;
+  opacity: 0;
+  -webkit-animation: 2.5s ease 5s normal forwards 1 appear;
+     -moz-animation: 2.5s ease 5s normal forwards 1 appear;
+      -ms-animation: 2.5s ease 5s normal forwards 1 appear;
+       -o-animation: 2.5s ease 5s normal forwards 1 appear;
+          animation: 2.5s ease 5s normal forwards 1 appear;
   
   &:before,
   &:after {
@@ -166,17 +241,19 @@ h1 {
     right: 0;
     z-index: -1;
     -webkit-backface-visibility: hidden; // for Chrome Windows
+    backface-visibility: hidden;
   }
 
   &:before {
     top: 0;
-    transform: skewY(1.5deg);
+    transform: skewY(3deg);
     transform-origin: 100% 0;
+    box-shadow: 0px 0px 100px 100px black;
   }
   
   &:after {
     bottom: 0;
-    transform: skewY(-1.5deg);
+    transform: skewY(-3deg);
     transform-origin: 100%;
   }
 }
@@ -331,6 +408,32 @@ h1 {
     90%  { opacity: .8 }
     95%  { opacity: 0 }
     100% { opacity: .8 }
+}
+
+@keyframes glow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+@-moz-keyframes glow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+@-webkit-keyframes glow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+@-ms-keyframes glow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+@-o-keyframes glow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 @keyframes scaleIn {

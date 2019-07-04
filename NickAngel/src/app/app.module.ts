@@ -19,7 +19,7 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     MatButtonModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
