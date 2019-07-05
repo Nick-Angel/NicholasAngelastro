@@ -16,14 +16,5 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    setTimeout(this.setVisibility, 4700);
-  }
-
-  setVisibility() {
-    const elem: HTMLElement = document.getElementById('nav');
-    elem.setAttribute('style', 'visibility: visible');
-  }
-
-
+  ngOnInit() {}
 }
