@@ -11,7 +11,15 @@ html, body {
     left:0;
     right:0;
     background: black;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
 
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+    display: none;
 }
 
 app-root {
@@ -21,6 +29,6 @@ app-root {
     left:0;
     right:0;
     height: inherit;
-    //overflow-y: scroll;
+    overflow: hidden;
     overflow-x: none;
 }

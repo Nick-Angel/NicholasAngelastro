@@ -41,34 +41,38 @@ h1 {
 
 .contact {
     -webkit-animation: .75s ease 5.25s normal both 1 appear;
-    -moz-animation: .75s ease 5.25s normal both 1 appear;
-     -ms-animation: .75s ease 5.25s normal both 1 appear;
-      -o-animation: .75s ease 5.25s normal both 1 appear;
-         animation: .75s ease 5.25s normal both 1 appear;
+       -moz-animation: .75s ease 5.25s normal both 1 appear;
+        -ms-animation: .75s ease 5.25s normal both 1 appear;
+         -o-animation: .75s ease 5.25s normal both 1 appear;
+            animation: .75s ease 5.25s normal both 1 appear;
 }
 
 .work {
     -webkit-animation: .75s ease 5s normal both 1 appear;
-    -moz-animation: .75s ease 5s normal both 1 appear;
-     -ms-animation: .75s ease 5s normal both 1 appear;
-      -o-animation: .75s ease 5s normal both 1 appear;
-         animation: .75s ease 5s normal both 1 appear;
+       -moz-animation: .75s ease 5s normal both 1 appear;
+        -ms-animation: .75s ease 5s normal both 1 appear;
+         -o-animation: .75s ease 5s normal both 1 appear;
+            animation: .75s ease 5s normal both 1 appear;
 }
 
 .projects {
     -webkit-animation: .75s ease 4.75s normal both 1 appear;
-    -moz-animation: .75s ease 4.75s normal  both 1 appear;
-     -ms-animation: .75s ease 4.75s normal both 1 appear;
-      -o-animation: .75s ease 4.75s normal both 1 appear;
-         animation: .75s ease 4.75s normal both 1 appear;
+       -moz-animation: .75s ease 4.75s normal both 1 appear;
+        -ms-animation: .75s ease 4.75s normal both 1 appear;
+         -o-animation: .75s ease 4.75s normal both 1 appear;
+            animation: .75s ease 4.75s normal both 1 appear;
 }
 
 .about {
     -webkit-animation: .75s ease 4.5s normal both 1 appear;
-    -moz-animation: .75s ease 4.5s normal both 1 appear;
-     -ms-animation: .75s ease 4.5s normal both 1 appear;
-      -o-animation: .75s ease 4.5s normal both 1 appear;
-         animation: .75s ease 4.5s normal both 1 appear;
+       -moz-animation: .75s ease 4.5s normal both 1 appear;
+        -ms-animation: .75s ease 4.5s normal both 1 appear;
+         -o-animation: .75s ease 4.5s normal both 1 appear;
+            animation: .75s ease 4.5s normal both 1 appear;
+}
+
+.about:after {
+    mix-blend-mode: darken;
 }
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **/
@@ -128,6 +132,7 @@ h1 {
     opacity: 0;
     border: 1px solid rgba(255, 255, 255, .4);
     box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
+    pointer-events: none;
     z-index: 3;
 
     -webkit-animation: flicker ease 1s 4.5s both;
@@ -159,9 +164,9 @@ h1 {
 
 .wrapper {
     position: absolute;
-    left: 50%;
-    top: 47.5%;
-    transform: translate(-50%, -50%);
+    top: 22%;
+    width: 100%;
+    //transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1;
 }
@@ -186,8 +191,8 @@ h1 {
 .headshot {
     margin-top: 15px;
     margin-bottom: 15px;
-    width: 40%;
-    height: 40%;
+    width: 20%;
+    height: 20%;
     background-color: black;
     border-radius: 200px;
     opacity: 0;
@@ -222,7 +227,10 @@ h1 {
 .aboutContainer {
   background: black;
   position: relative;
-  height: 100%;
+  height: 150%;
+  width: 100%;
+  text-align: center;
+  border: 1px solid blue;
   z-index:2;
 
   outline: 1px solid transparent;
@@ -239,6 +247,7 @@ h1 {
     content: '';
     display: block;
     height: 100%;
+    width: 100%;
     left: 0;
     position: absolute;
     right: 0;
@@ -258,7 +267,24 @@ h1 {
     bottom: 0;
     transform: skewY(-3deg);
     transform-origin: 100%;
+    box-shadow: 0px 0px 120px 120px black;
   }
+}
+
+.header {
+    opacity: 1;
+    font-family: Roboto;
+    font-size: 2.25vw;
+    letter-spacing: 2px;
+    color: rgb(177, 189, 201, 0.9);
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.8);
+    z-index: 2;
+
+    -webkit-animation: flicker 1.1s 9s both;
+       -moz-animation: flicker 1.1s 9s both;
+        -ms-animation: flicker 1.1s 9s both;
+         -o-animation: flicker 1.1s 9s both;
+            animation: flicker 1.1s 9s both;
 }
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **/
@@ -287,31 +313,129 @@ h1 {
 
 .gitLink {
     -webkit-animation: .75s ease 5.5s normal both 1 appear;
-    -moz-animation: .75s ease 5.5s normal both 1 appear;
-     -ms-animation: .75s ease 5.5s normal both 1 appear;
-      -o-animation: .75s ease 5.5s normal both 1 appear;
-         animation: .75s ease 5.5s normal both 1 appear;
+       -moz-animation: .75s ease 5.5s normal both 1 appear;
+        -ms-animation: .75s ease 5.5s normal both 1 appear;
+         -o-animation: .75s ease 5.5s normal both 1 appear;
+            animation: .75s ease 5.5s normal both 1 appear;
 }
 
 .fbLink {
     -webkit-animation: .75s ease 5.75s normal both 1 appear;
-    -moz-animation: .75s ease 5.75s normal both 1 appear;
-     -ms-animation: .75s ease 5.75s normal both 1 appear;
-      -o-animation: .75s ease 5.75s normal both 1 appear;
-         animation: .75s ease 5.75s normal both 1 appear;
+       -moz-animation: .75s ease 5.75s normal both 1 appear;
+        -ms-animation: .75s ease 5.75s normal both 1 appear;
+         -o-animation: .75s ease 5.75s normal both 1 appear;
+            animation: .75s ease 5.75s normal both 1 appear;
 }
 
 .linkedLink {
     -webkit-animation: .75s ease 6s normal both 1 appear;
-    -moz-animation: .75s ease 6s normal both 1 appear;
-     -ms-animation: .75s ease 6s normal both 1 appear;
-      -o-animation: .75s ease 6s normal both 1 appear;
-         animation: .75s ease 6s normal both 1 appear;
+       -moz-animation: .75s ease 6s normal both 1 appear;
+        -ms-animation: .75s ease 6s normal both 1 appear;
+         -o-animation: .75s ease 6s normal both 1 appear;
+            animation: .75s ease 6s normal both 1 appear;
+}
+
+.svgContainer {
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+}
+
+#Layer_1 {
+    transform: scale(1.3) translate(-10px, 30%);
+}
+
+.cls-1, .cls-2{fill:none;}
+.cls-1,.cls-2,.cls-3{stroke:#a0b0ff;stroke-miterlimit:10;z-index: 4;}
+.cls-1{stroke-width:1.5px;}
+.cls-3{
+    fill:#a0b0ff;
+}
+.cls-4{font-size:10px;fill:#b1bdc9;font-family:Roboto-Regular, Roboto;}
+
+.cls-2 {
+    stroke:#a0b0ff;
+    stroke-width: 1.5px;
+    fill: transparent;
+    stroke-dasharray: 1100;
+    stroke-dashoffset: 1100;
+    box-shadow: 0px 0px 5px white;
+    animation: drawing ease-in-out 2s 9s forwards;
+}
+
+.cls-3:nth-of-type(1), ._2015 {
+    animation: .75s ease 9s normal both 1 appear;
+}
+.cls-3:nth-of-type(2), ._2016 {
+    animation: .75s ease 9.25s normal both 1 appear;
+}
+.cls-3:nth-of-type(3), ._2017 {
+    animation: .75s ease 9.5s normal both 1 appear;
+}
+.cls-3:nth-of-type(5), ._2018 {
+    animation: .75s ease 9.75s normal both 1 appear;
+}
+.cls-3:nth-of-type(4), ._2019 {
+    animation: .75s ease 10s normal both 1 appear;
+}
+
+._2015, ._2016, ._2017, ._2018, ._2019 {
+    font-size:10px;
+    fill:#b1bdc9;
+    font-family:Roboto-Regular, Roboto;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.8);
+}
+
+.cls-3:hover {
+    fill: black;
+    cursor: pointer;
+}
+
+.year:hover {
+    fill: #a0b0ff;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.first:hover ~ ._2015, 
+.second:hover ~ ._2016, 
+.third:hover ~ ._2017, 
+.fourth:hover ~ ._2019,
+.fifth:hover ~ ._2018  {
+    fill: #a0b0ff;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+.year:hover ~ .cls-3,
+.year:hover ~ .second,
+._2017:hover ~ .third,
+._2018:hover ~ .fifth,
+._2019:hover ~ .fourth {
+    fill: black;
+}
+
+/** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~~~~~~~~ PROJECTS ~~~~~~~~~~~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **/
+
+.projectsContainer {
+    position: absolute;
+    background-image: url("../../assets/bg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    height: 150vh;
+    min-width: 100vw;
+    opacity: .8;
 }
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **/
 /** ~~~~~~~~~~~~~~~~~ ANIMATIONS ~~~~~~~~~~~~~~~~~~~~ **/
 /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **/
+
+@keyframes drawing {
+    to { stroke-dashoffset: 0; }
+}
 
 @keyframes appear {
     0% { opacity:0; }
