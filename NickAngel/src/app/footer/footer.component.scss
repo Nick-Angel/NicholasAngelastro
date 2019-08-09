@@ -1,0 +1,82 @@
+/** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **/
+
+.animation {
+    transition: all .75s;
+}
+
+.animation:hover {
+    transform: scale(1.1);
+    color: #a0b0ff;
+}
+
+.linkfooter {
+    z-index: 3;
+    overflow: hidden;
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+
+    fa-icon {
+        margin-left: 5px;
+        margin-right: 5px;
+        color: rgba(177, 189, 201, 0.7);
+        float: right;
+        font-size: 1.5em;
+    }
+
+    fa-icon:hover {
+        color: #a0b0ff;
+    }
+}
+
+.gitLink {
+    -webkit-animation: .75s ease 5.5s normal both 1 appear;
+       -moz-animation: .75s ease 5.5s normal both 1 appear;
+        -ms-animation: .75s ease 5.5s normal both 1 appear;
+         -o-animation: .75s ease 5.5s normal both 1 appear;
+            animation: .75s ease 5.5s normal both 1 appear;
+}
+
+.fbLink {
+    -webkit-animation: .75s ease 5.75s normal both 1 appear;
+       -moz-animation: .75s ease 5.75s normal both 1 appear;
+        -ms-animation: .75s ease 5.75s normal both 1 appear;
+         -o-animation: .75s ease 5.75s normal both 1 appear;
+            animation: .75s ease 5.75s normal both 1 appear;
+}
+
+.linkedLink {
+    -webkit-animation: .75s ease 6s normal both 1 appear;
+       -moz-animation: .75s ease 6s normal both 1 appear;
+        -ms-animation: .75s ease 6s normal both 1 appear;
+         -o-animation: .75s ease 6s normal both 1 appear;
+            animation: .75s ease 6s normal both 1 appear;
+}
+
+@keyframes appear {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes appear {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes appear {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes appear {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes appear {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
